@@ -1,0 +1,3 @@
+"project_no","project_name","start_date","end_date","course_id","course_name","academic_credits","techniques_used","short_description","long_description","small_image","big_image","group_size","external_link"
+1,"Portfolio",2009-08-28,2009-10-25,"TDP003","Projekt: Egna datormiljön",6,"Python,HTML,CSS,Javascript","En portfolio sida","En portfolio sida där vi lägger upp alla våra projekt, under kommande 3 år. Vi använde HTML, CSS, Python, Javascript och Kid.","images/projects_portfolio_small.png","images/projects_portfolio_big.png",2,"http://www.ida.liu.se/~TDP003/"
+2,"Objective Caml",2009-09-01,2009-10-09,"TDP001","Handhavande av datormiljö",4,"Objective Caml","Rapport om Objective Caml","Skriver en rapport om Objective Caml (Ocaml). ",,,4,"http://www.ida.liu.se/~TDP001/"

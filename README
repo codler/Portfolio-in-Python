@@ -1,0 +1,92 @@
+README
+Authors: Han Lin Yap, Alexander Östman
+
+
+
+Installation guide:
+
+Requirements:
+Apache 2.2 (with mod_python)
+Python +2.5
+Kid 
+
+Instructions:
+Unpack to appropriate directory in your webserver. (eg. in webroot directory (public_html). Be sure to set file permissions writeable. 
+
+
+How to configurate the site:
+Add/Modify a project:
+To add/modify a project to your site, simply add/modify a line in the "web/data.csv" file.
+Remove a project:
+To remove a project on your site, remove the line where the project is stored in "web/data.csv" file.
+
+How to change language:
+To change language on your page goto "web/config.py" file and change DEFAULT_LANGUAGE variable. No extra languages currently available besides swedish. It's possible to create another language. 
+We do gladly accept your language translation if you made one.
+
+How to add a image to your project:
+To add a image to the project goto "web/data.csv" file and add a path under small_image (icon) or big_image (image for the project). There is default images ("web/images/projects_default_small.png" / "web/images/projects_default_big.png" ) if no images are added.
+
+
+
+Folder stucture:
+
+"Your Site"/	- Root
+   README	- This file
+   doc/		- Creators log
+   web/		- Web folder
+       images/	- Images for your projects and for the website.
+           *.png
+       js/	- Contains javascript
+           *.js
+       style/	- Contains stylesheet
+           *.css
+       templates/-Contains template to generate the site
+	   common.kid - Main kid-template for other kid-files
+           *.kid
+       config.py- Configuaration files for languages.
+       data.csv	- Database-file
+       data.py	- Database-api (fetch projects)
+       logfile.log - Logs all api-calls
+       *.py
+
+
+
+System manual:
+
+-data.py (API):
+
+Main functions (http://www.ida.liu.se/~larde/portfolio-api/) in data.py (API):
+ 	
+function: init()
+function description: Reads data from file, transforming it from UTF-8 to Unicode. 	
+
+function: project_count()
+function description: Gets number of projects in database. 	
+return value: tuple of number and number 
+
+function: lookup_project(id)
+function description: Fetches all project information for given id (corresponding to the project_no). 	
+return value: tuple of number and dict 
+
+function: retrieve_projects(sort_by='start_date', sort_order='asc', techniques=None, search=None, search_fields=None)
+function description: Fetches projects according to search criteria and sorted. 	
+return value: tuple of number and list 
+	
+function: retrieve_techniques()
+functopn description: Fetches a list of all tecniques used in any of the projects. 	
+return value: tuple of number and list 
+	
+function: retrieve_technique_stats()
+function values: Creates stats for techniques used in all projects.
+return value: tuple of number and list 
+
+-How to use the main functions of the webpage:
+Look at the instruction image, "web/image/instruction_images.png"
+
+User Evaluation:
+See evaluation.txt-file
+
+Sources: 
+Application Programming Interface (API) för Data-modulen, http://www.ida.liu.se/~larde/portfolio-api/
+

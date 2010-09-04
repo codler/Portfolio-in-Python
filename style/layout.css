@@ -1,0 +1,130 @@
+/*
+ *Filename:   layout.css
+ *Authors:    Han Lin Yap and Alexander Östman
+ *Course:     TDP003 - Projekt: Egna datormiljön
+ *Date:       HT09   - 2009-10-07
+ *Program:    LiU/IP1
+ *Desciption: This is the main stylesheet. 
+*/
+
+/* === YUI reset 2.7.0 modified === */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+legend{color:#000;}
+
+/* Tags */
+h1 { 
+	border-bottom: 1px solid #000;
+	font-family: Arial;
+	font-size: 36px; 
+	margin-bottom: 20px;
+}
+h2 { font-size: 24px; }
+h3 { font-size: 16px; }
+h4 { font-size: 14px; }
+h5 { font-size: 12px; }
+h6 { font-size: 10px; }
+
+body {
+	background: #e2e2e2 url('../images/bg_body.png') repeat-x fixed;
+	font: 12px Helvetica;
+}
+/* Layout */
+#wrapper {
+	background: url('../images/bg_header.png') repeat-x;
+	margin: 0 auto;
+	position: relative;
+	width: 1000px;
+}
+#header {
+	height: 200px;
+}
+#header h1 {
+	border: none;
+	font-size: 58px;
+	padding: 40px 70px;
+}
+#navigation {
+	background-color: #fafafa;
+	height: 40px;
+}
+#navigation ul {
+}
+#navigation li {
+	float: left;
+}
+#navigation li a {
+	color: #79BF34;
+	display: block;
+	font-family: Helvetica;
+	font-size: 18px;
+	font-weight: bold;
+	height: 20px;
+	padding: 10px 20px;
+	text-decoration: none;
+	
+}
+#navigation li a:hover {
+	background-color: #fff;
+	color: #89DF00;
+}
+#container {
+	background: url('../images/bg_content.png') no-repeat fixed center top;
+	clear: both;
+	height: 20px;
+}
+#content {
+	background-color: #fff;
+	float: left;
+	margin: 10px 0 10px 10px;
+	min-height: 300px;
+	padding: 10px;
+	width: 666px;
+}
+#content p {
+	font-size: 14px;
+}
+#sidebar {
+	background-color: #fff;
+	float: right;
+	margin: 10px 10px 10px;
+	padding: 10px;
+	width: 260px;
+}
+#footer {
+	background-color: #fff;
+	clear: both;
+	color: #79BF34;
+	margin: 10px;
+	padding: 10px;
+
+}
+#footer a {
+	color: #79BF34;
+	text-decoration:none;
+}
+#footer a:hover {
+	text-decoration:underline;
+}
+/* Other */
+#search {
+	position: absolute;
+	top: 170px;
+	right: 10px;	
+}
+#search input[type='text'] {
+	width: 220px;
+}
+#search input[type='submit'] {
+	width: 50px;
+}
+input[type='text'].advanced-search {
+	width: 500px;
+}

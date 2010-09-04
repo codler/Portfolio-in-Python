@@ -1,0 +1,21 @@
+Evaluation
+
+We evaluated the system on eight diffrent persons. 
+
+This is a summary of advantage and disanvantage based on individual opinions:
+
+Advantage:
+
+- easy to use
+- good layout
+- good search options
+- good functionality
+- nice banner
+- easy and logical navigation 
+
+Disadvantage:
+- complicated to get to advanced search
+- disorginaised search page
+- high CPU usage caused by Javascript
+
+
